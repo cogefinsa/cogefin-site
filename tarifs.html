@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="fr">
-  <head>
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cogefin SA — Fiduciaire moderne en Suisse</title>
-<meta name="description" content="Fiduciaire digitale. Comptabilité, salaires, fiscalité et gestion administrative de parcs photovoltaïques.">
+<meta name="description" content="Fiduciaire digitale en Suisse romande. Comptabilité, salaires, fiscalité, monitoring administratif PV.">
 <link rel="icon" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css">
 <title>Tarifs</title></head>
-  <body>
-    
+<body>
+
 <nav class="nav">
   <div class="inner container">
     <a class="logo" href="index.html" aria-label="Accueil Cogefin">
@@ -22,29 +21,55 @@
       <a href="services-particuliers.html">Particuliers</a>
       <a href="photovoltaique.html">Photovoltaïque</a>
       <a href="tarifs.html">Tarifs</a>
-      <a href="a-propos.html">À propos</a>
+      <a href="application.html">Application</a>
       <a href="contact.html" class="cta">Contact</a>
     </div>
   </div>
 </nav>
 
-    <main class="container section">
-      <h1>Tarifs</h1>
-      <p class="lead">Forfaits mensuels transparents. Résiliable en tout temps.</p>
-      
-  <table class="table">
-    <thead><tr><th>Pack</th><th>Idéal pour</th><th>Inclut</th><th>À partir de</th></tr></thead>
-    <tbody>
-      <tr><td>Start</td><td>Indépendants</td><td>Compta simple, TVA trimestrielle, 1 déclaration fiscale</td><td>CHF 190 / mois</td></tr>
-      <tr><td>Business</td><td>PME 1–10 employés</td><td>Compta mensuelle, salaires, TVA, reporting</td><td>CHF 590 / mois</td></tr>
-      <tr><td>Scale</td><td>PME 10–50 employés</td><td>Compta mensuelle, payroll complet, contrôle de gestion</td><td>CHF 1’490 / mois</td></tr>
-      <tr><td>PV+</td><td>Parcs photovoltaïques</td><td>Administration et monitoring, facturation énergie, reporting</td><td>Sur offre</td></tr>
-    </tbody>
-  </table>
-  <p class="note">Prix indicatifs. Demandez une offre adaptée à votre volume.</p>
+<main class="container section">
 
-    </main>
-    
+<h1>Tarifs</h1>
+<table class="table">
+  <thead><tr><th>Pack</th><th>Idéal pour</th><th>Inclut</th><th>À partir de</th></tr></thead>
+  <tbody>
+    <tr><td>Start</td><td>Indépendants</td><td>Compta simple, TVA trimestrielle, 1 déclaration fiscale</td><td>CHF 190 / mois</td></tr>
+    <tr><td>Business</td><td>PME 1–10 employés</td><td>Compta mensuelle, salaires, TVA, reporting</td><td>CHF 590 / mois</td></tr>
+    <tr><td>Scale</td><td>PME 10–50 employés</td><td>Comptabilité, payroll complet, contrôle de gestion</td><td>CHF 1’490 / mois</td></tr>
+    <tr><td>PV+</td><td>Parcs photovoltaïques</td><td>Administration et monitoring, facturation énergie, reporting</td><td>Sur offre</td></tr>
+  </tbody>
+</table>
+<div class="simulator">
+  <h2>Simulateur de prix (indicatif)</h2>
+  <div class="row">
+    <label>Pack
+      <select id="pack">
+        <option value="start">Start</option>
+        <option value="business">Business</option>
+        <option value="scale">Scale</option>
+      </select>
+    </label>
+    <label>Factures / mois
+      <input id="invoices" type="number" min="0" value="50">
+    </label>
+  </div>
+  <div class="row">
+    <label>Employés (payroll)
+      <input id="employees" type="number" min="0" value="5">
+    </label>
+    <div>
+      <label><input id="opt_tva" type="checkbox" checked> TVA</label>
+      <label><input id="opt_reporting" type="checkbox" checked> Reporting</label>
+      <label><input id="opt_pv" type="checkbox"> Admin PV</label>
+    </div>
+  </div>
+  <div class="total" id="total">CHF — / mois</div>
+  <p class="note">Résultat indicatif — le prix exact dépend du volume réel et de la complexité. Demandez une offre personnalisée.</p>
+  <a class="btn primary" href="contact.html">Demander une offre</a>
+</div>
+
+</main>
+
 <footer class="footer">
   <div class="container">
     <div class="grid" style="grid-template-columns:2fr 1fr 1fr; gap:20px">
@@ -67,7 +92,7 @@
       <div>
         <strong>Raccourcis</strong><br>
         <a href="tarifs.html">Tarifs</a><br>
-        <a href="a-propos.html">À propos</a><br>
+        <a href="application.html">Application</a><br>
         <a href="contact.html">Contact</a><br>
         <a href="mentions-legales.html">Mentions légales</a><br>
         <a href="politique-confidentialite.html">Confidentialité</a>
@@ -77,6 +102,6 @@
   </div>
 </footer>
 
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>

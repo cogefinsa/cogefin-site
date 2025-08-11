@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="fr">
-  <head>
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cogefin SA — Fiduciaire moderne en Suisse</title>
-<meta name="description" content="Fiduciaire digitale. Comptabilité, salaires, fiscalité et gestion administrative de parcs photovoltaïques.">
+<meta name="description" content="Fiduciaire digitale en Suisse romande. Comptabilité, salaires, fiscalité, monitoring administratif PV.">
 <link rel="icon" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css">
 <title>Contact</title></head>
-  <body>
-    
+<body>
+
 <nav class="nav">
   <div class="inner container">
     <a class="logo" href="index.html" aria-label="Accueil Cogefin">
@@ -22,32 +21,37 @@
       <a href="services-particuliers.html">Particuliers</a>
       <a href="photovoltaique.html">Photovoltaïque</a>
       <a href="tarifs.html">Tarifs</a>
-      <a href="a-propos.html">À propos</a>
+      <a href="application.html">Application</a>
       <a href="contact.html" class="cta">Contact</a>
     </div>
   </div>
 </nav>
 
-    <main class="container section">
-      <h1>Contact</h1>
-      <p class="lead">Nous répondons sous 48h.</p>
-      
-  <form class="form" name="contact" method="POST">
-    <input name="name" required placeholder="Nom / Société">
-    <input name="email" required type="email" placeholder="E‑mail">
-    <input name="phone" placeholder="Téléphone">
-    <textarea name="message" placeholder="Votre message"></textarea>
-    <button class="btn primary submit" type="submit">Envoyer</button>
-  </form>
-  <div class="section">
-    <div class="grid cards">
-      <div class="card"><h3>Fribourg</h3><p>Avenue de Tivoli 3 · 1700 Fribourg · 026 539 19 99 · fribourg@cogefin.ch</p></div>
-      <div class="card"><h3>Genève</h3><p>Rue de Lausanne 72 · 1202 Genève · 022 539 16 99 · geneve@cogefin.ch</p></div>
-    </div>
-  </div>
+<main class="container section">
 
-    </main>
-    
+<h1>Contact</h1>
+<div id="sent-box" class="alert" style="display:none">Merci, votre message a été envoyé. Nous vous répondons sous 48h.</div>
+<form class="form" name="contact" method="POST" action="https://formsubmit.co/cogefin@cogefin.ch">
+  <input type="hidden" name="_subject" value="Nouveau message depuis le site Cogefin">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://cogefinsa.github.io/cogefin-site/contact.html?sent=1">
+  <input name="name" required placeholder="Nom / Société">
+  <input name="email" required type="email" placeholder="E‑mail">
+  <input name="phone" placeholder="Téléphone">
+  <textarea name="message" placeholder="Votre message"></textarea>
+  <button class="btn primary submit" type="submit">Envoyer</button>
+</form>
+<p class="note">Si le formulaire ne s’envoie pas, écrivez-nous à <a href="mailto:cogefin@cogefin.ch">cogefin@cogefin.ch</a>.</p>
+<div class="section">
+  <div class="grid cards">
+    <div class="card"><h3>Fribourg</h3><p>Avenue de Tivoli 3 · 1700 Fribourg · 026 539 19 99 · fribourg@cogefin.ch</p></div>
+    <div class="card"><h3>Genève</h3><p>Rue de Lausanne 72 · 1202 Genève · 022 539 16 99 · geneve@cogefin.ch</p></div>
+  </div>
+</div>
+
+</main>
+
 <footer class="footer">
   <div class="container">
     <div class="grid" style="grid-template-columns:2fr 1fr 1fr; gap:20px">
@@ -70,7 +74,7 @@
       <div>
         <strong>Raccourcis</strong><br>
         <a href="tarifs.html">Tarifs</a><br>
-        <a href="a-propos.html">À propos</a><br>
+        <a href="application.html">Application</a><br>
         <a href="contact.html">Contact</a><br>
         <a href="mentions-legales.html">Mentions légales</a><br>
         <a href="politique-confidentialite.html">Confidentialité</a>
@@ -80,6 +84,6 @@
   </div>
 </footer>
 
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
