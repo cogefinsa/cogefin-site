@@ -1,0 +1,1 @@
+const b=document.querySelector('[data-menu-toggle]');const m=document.querySelector('[data-menu]');if(b&&m){b.addEventListener('click',()=>m.classList.toggle('open'))}
